@@ -22,14 +22,15 @@ class Solver
     array_word.join
   end
 
-  def fizzbuzz(arg)    
-    if arg % 3 == 0 && arg % 5 == 0
-        return 'fizzbuzz'
-    elsif arg % 3 == 0
-        return 'fizz'  
-    elsif arg % 5 == 0
-        return 'buzz'       
-    else arg.to_s       
-    end    
+  def fizzbuzz(arg)
+    if (arg % 3).zero? && (arg % 5).zero?
+      'fizzbuzz'
+    elsif (arg % 3).zero?
+      'fizz'
+    elsif (arg % 5).zero?
+      'buzz'
+    else
+      arg.to_s
+    end
   end
 end
