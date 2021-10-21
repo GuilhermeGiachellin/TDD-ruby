@@ -14,3 +14,19 @@ describe 'Factorial method TDD' do
     expect(solver.factorial(-2)).to eq('Negative numbers are not permited!')   
   end  
 end
+
+
+describe 'reverse method TDD' do
+  let(:solver) { Solver.new }
+
+  it "Call reverse method" do
+    expect(solver).to receive(:reverse).with('Lorenzo')
+    solver.reverse('Lorenzo')
+  end
+
+  it "return string" do
+    expect(solver.reverse('Lorenzo')).to eq('asdasd')
+  end
+
+
+end
