@@ -25,7 +25,7 @@ describe 'reverse method TDD' do
   end
 
   it "return string" do
-    expect(solver.reverse('Lorenzo')).to eq('asdasd')
+    expect(solver.reverse('Lorenzo')).to eq('ozneroL')
   end
 
 

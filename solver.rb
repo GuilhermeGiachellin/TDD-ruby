@@ -13,6 +13,13 @@ class Solver
     end
 
     def reverse(string)
-        
+        array_of_letters = string.split("")
+        array_word = []
+        index = array_of_letters.length - 1
+        while index >= 0 do        
+            array_word << array_of_letters[index]
+            index -= 1
+        end 
+       return array_word.join
     end
 end
