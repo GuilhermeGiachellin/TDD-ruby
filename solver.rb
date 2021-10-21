@@ -23,8 +23,10 @@ class Solver
   end
 
   def fizzbuzz(arg)    
-    if arg % 3 || arg % 5 != 0 
+    if arg % 3 != 0 || arg % 5 != 0 
         return arg.to_s
+    elsif arg % 3 == 0 && arg % 5 == 0
+        return 'fizzbuzz'    
     end    
   end
 end
