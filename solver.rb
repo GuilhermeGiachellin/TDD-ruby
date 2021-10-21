@@ -23,6 +23,8 @@ class Solver
   end
 
   def fizzbuzz(arg)    
-
+    if arg % 3 || arg % 5 != 0 
+        return arg.to_s
+    end    
   end
 end
