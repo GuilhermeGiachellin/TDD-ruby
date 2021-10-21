@@ -41,5 +41,9 @@ describe 'reverse method TDD' do
     it 'Return buzz if is divisible by 5' do
         expect(solver.fizzbuzz(25)).to eq('buzz')
     end
+
+    it 'Return argument as string in case not divisible' do
+        expect(solver.fizzbuzz(7)).to eq('7')
+    end
   end  
 end

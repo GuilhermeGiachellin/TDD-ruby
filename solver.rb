@@ -21,4 +21,8 @@ class Solver
     end
     array_word.join
   end
+
+  def fizzbuzz(arg)    
+
+  end
 end
