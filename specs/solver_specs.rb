@@ -26,4 +26,20 @@ describe 'reverse method TDD' do
   it 'Return the reversed string' do
     expect(solver.reverse('Lorenzo')).to eq('ozneroL')
   end
+
+  describe 'fizzbuzz method TDD' do
+    let(:solver) { Solver.new }
+
+    it 'Return fizzbuzz if is divisible by 3 and 5' do
+        expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+
+    it 'Return fizz if is divisible by 3' do
+        expect(solver.fizzbuzz(9)).to eq('fizz')
+    end
+
+    it 'Return buzz if is divisible by 5' do
+        expect(solver.fizzbuzz(25)).to eq('buzz')
+    end
+  end  
 end
