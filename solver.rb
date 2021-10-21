@@ -26,7 +26,9 @@ class Solver
     if arg % 3 == 0 && arg % 5 == 0
         return 'fizzbuzz'
     elsif arg % 3 == 0
-        return 'fizz'     
+        return 'fizz'  
+    elsif arg % 5 == 0
+        return 'buzz'       
     else arg.to_s       
     end    
   end
