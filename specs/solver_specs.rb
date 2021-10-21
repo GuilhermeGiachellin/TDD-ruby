@@ -35,7 +35,7 @@ describe 'reverse method TDD' do
     end
 
     it 'Return fizz if is divisible by 3' do
-        expect(solver.fizzbuzz(9)).to eq('fizz')
+        expect(solver.fizzbuzz(3)).to eq('fizz')
     end
 
     it 'Return buzz if is divisible by 5' do
